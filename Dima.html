@@ -1,1 +1,167 @@
-<h1>Всё работает!</h1>
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Сайт о моих родных</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('https://www.transparenttextures.com/patterns/hearts.png') repeat #fff0f5;
+            color: #333;
+        }
+        header {
+            background-color: #f8c8dc;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        main {
+            padding: 40px 20px;
+            max-width: 900px;
+            margin: auto;
+            background-color: rgba(255, 255, 255, 0.95);
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .slideshow-container {
+            position: relative;
+            max-width: 600px;
+            margin: 0 auto 30px;
+        }
+        .slide {
+            width: 100%;
+            display: none;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.15);
+        }
+        .text-block {
+            margin-top: 30px;
+            font-size: 18px;
+            line-height: 1.6;
+        }
+        .center {
+            text-align: center;
+            margin-top: 30px;
+        }
+        .button {
+            background-color: #ff6f91;
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 25px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.3s ease;
+        }
+        .button:hover {
+            background-color: #e65f80;
+        }
+        footer {
+            background-color: #f8c8dc;
+            padding: 10px;
+            text-align: center;
+            font-size: 14px;
+            color: #444;
+        }
+        .lesson-section {
+            background-color: #f0f8ff;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 40px;
+        }
+        .lesson-section h2 {
+            margin-bottom: 20px;
+        }
+        @media (max-width: 768px) {
+            .slide {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Сайт о моих родных</h1>
+    <p>Автор: Фамилия Имя</p>
+</header>
+
+<main>
+    <div class="center">
+        <h2>Мгновения, которые я храню в сердце</h2>
+        <div class="slideshow-container">
+            <img class="slide" src="photo1.jpg" alt="Семейное фото 1">
+            <img class="slide" src="photo2.jpg" alt="Семейное фото 2">
+            <img class="slide" src="photo3.jpg" alt="Семейное фото 3">
+        </div>
+    </div>
+
+    <div class="text-block">
+        <p>
+            Этот сайт я создал(а), чтобы сказать важные слова тем, кто всегда рядом.<br><br>
+            Родные — это те, кто поддерживает в трудные моменты и радуется моим победам. 
+            Те, кто учил меня жизни, любви и доброте. Те, кто вдохновляет быть лучше каждый день.
+            Их тепло, забота и пример — самое ценное, что у меня есть.<br><br>
+            Спасибо вам за всё. Я вас очень люблю.
+        </p>
+    </div>
+
+    <div class="lesson-section">
+        <h2>Чему я научился на курсе "Создание сайтов" в Алгоритмике</h2>
+        <p>
+            Благодаря тому, что вы отправили меня на курс "Создание сайтов" в "Алгоритмике", я научился многому! Теперь я понимаю, как создавать сайты, и вот что я научился:
+        </p>
+        <ul>
+            <li><strong>Как делать сайты:</strong> я научился создавать страницы в интернете и оформлять их так, чтобы они были красивыми и удобными.</li>
+            <li><strong>Как добавить интерактивность:</strong> я понял, как делать сайты не только красивыми, но и умными, чтобы на них можно было нажимать кнопки или заполнять формы.</li>
+            <li><strong>Как работать с инструментами:</strong> я узнал, как использовать специальные программы и библиотеки, которые помогают быстро и легко создавать сайты.</li>
+            <li><strong>Как сделать сайт удобным для пользователей:</strong> я научился думать, как сделать сайт таким, чтобы им было легко и удобно пользоваться.</li>
+            <li><strong>Как работать в команде:</strong> я понял, как важно работать с другими людьми, чтобы создать хороший сайт.</li>
+        </ul>
+        <p>
+            Эти знания помогут мне не только создавать сайты, но и уверенно двигаться вперёд в изучении новых технологий. Спасибо вам за то, что поддержали меня в этом пути! 
+        </p>
+        <p>
+            Я очень благодарен(на) вам, что вы отправили меня на этот курс. Благодаря вам я получил(а) важные навыки, которые пригодятся мне в будущем, и мне стало намного интереснее изучать технологии. Вы помогли мне открыть для себя новое увлекательное направление, и я обещаю, что буду использовать полученные знания на полную!
+        </p>
+    </div>
+
+    <div class="center">
+        <p>Этот сайт — мой тёплый привет вам от всего сердца ❤️</p>
+        <button class="button" onclick="showThanks()">Спасибо вам!</button>
+    </div>
+</main>
+
+<footer>
+    С любовью и благодарностью &copy; Фамилия Имя, 2025
+</footer>
+
+<script>
+    let slideIndex = 0;
+    const slides = document.getElementsByClassName("slide");
+
+    function showSlides() {
+        for (let i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {
+            slideIndex = 1;
+        }
+        slides[slideIndex - 1].style.display = "block";
+        setTimeout(showSlides, 3000); // смена слайда каждые 3 секунды
+    }
+
+    showSlides(); // запуск слайдера при загрузке страницы
+
+    function showThanks() {
+        alert("Спасибо вам за любовь, поддержку и веру в меня. Вы — часть моего сердца.");
+    }
+</script>
+
+</body>
+</html>
