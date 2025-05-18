@@ -10,11 +10,17 @@
             padding: 0;
             background: url('https://www.transparenttextures.com/patterns/hearts.png') repeat #fff0f5;
             color: #21590B;
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Центрирование всех элементов по горизонтали */
+            justify-content: flex-start; /* Содержимое сверху */
+            height: 100vh;
         }
         header {
             background-color: #8742D6;
             padding: 20px;
-            text-align: center;
+            text-align: center; /* Центрирование текста в хедере */
+            width: 100%;
         }
         header h1 {
             margin: 0;
@@ -26,18 +32,23 @@
             background-color: rgba(255, 255, 255, 0.95);
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Центрирование содержимого main */
+            justify-content: center;
         }
         .slideshow-container {
             position: relative;
             max-width: 600px;
             margin: 0 auto 30px;
+            display: flex;
+            justify-content: center; /* Центрирование слайдера */
         }
         .slide {
-            width: 45%;
+            width: 100%;
             display: none;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0,0,0,0.15);
-            aligin: center;
         }
         .text-block {
             margin-top: 30px;
@@ -67,6 +78,7 @@
             text-align: center;
             font-size: 14px;
             color: #444;
+            width: 100%;
         }
         .lesson-section {
             background-color: #f0f8ff;
@@ -88,7 +100,7 @@
 
 <header>
     <h1>Сайт о моих близких</h1>
-    <p>Автор: Карловский Иван </p>
+    <p>Автор: Карловский Иван</p>
 </header>
 
 <main>
